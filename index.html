@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      type="text/css" />
+   <link rel="stylesheet" type="text/css" href="./style.css" />
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+   <title>SPA semplice</title>
+</head>
+
+<body>
+   <div id="container" class="container">
+      <div id="pagina1" class="page">
+        
+         <div class="row"><a href="#pagina2">Diagrammi di Flusso</a></div>
+         <div class="row"><a href="#pagina3">Struct</a></div>     
+         <div class="row"><a href="#pagina4">Funzioni</a></div>                  
+      </div>
+      <div id="pagina2" class="page">
+         <div class="row"><a href="#pagina1">Home</a></div>
+         <div class="row"><div id="eckb-article-content-body"><h2 class="wp-block-heading" data-id="articleTOC_0"><strong>Gli algoritmi</strong></h2>
+
+
+
+            <p><strong>Un programma per computer</strong>&nbsp;è un insieme di istruzioni codificate che il computer esegue per svolgere uno o più determinati compiti. Si ricorda che un programma è memorizzato nella memoria centrale, viene eseguito dalla CPU, e funziona mediante l’elaborazione di dati ed informazioni, che riceve dal mondo esterno tramite le periferiche di INPUT, come ad esempio la tastiera il mouse, e di OUTPUT, come ad esempio il monitor.&nbsp;</p>
+            
+            
+            
+            <p>Le istruzioni di un programma eseguono un algoritmo, cioè una sequenza di istruzioni matematiche e logiche che permettono di ottenere un risultato partendo da dei dati e delle informazioni. I programmi più complessi possono comprendere anche più algoritmi che collaborano tra loro per svolgere operazioni complesse.</p>
+            
+            
+            
+            <p>Ricordiamo le 6 caratteristiche di un algoritmo:</p>
+            
+            
+            
+            <p>–&nbsp;<strong>correttezza</strong>: deve funzionare correttamente;</p>
+            
+            
+            
+            <p>–&nbsp;<strong>generalità</strong>: non deve dipendere da un set di dati particolare;</p>
+            
+            
+            
+            <p>–&nbsp;<strong>finitezza</strong>: deve avere un numero finito di istruzioni per terminare;</p>
+            
+            
+            
+            <p>–&nbsp;<strong>efficienza</strong>: non deve fare operazioni inutili;</p>
+            
+            
+            
+            <p>–&nbsp;<strong>non ambiguità</strong>: le istruzioni non devono essere ambigue o contradditorie;</p>
+            
+            
+            
+            <p><strong>– completezza</strong>: devono essere considerati tutti i casi possibili;</p>
+            
+            
+            
+            <p>Prima di poter scrivere un programma per computer è necessario quindi imparare a scrivere algoritmi, capirne le logiche di progettazione, imparare e gestire i dati e la loro elaborazione.</p>
+            
+            
+            
+            <p>Per questa ragione possiamo usare i diagrammi di flusso.</p>
+            
+            
+            
+            <h2 class="wp-block-heading" data-id="articleTOC_1"><strong>Diagrammi di flusso</strong></h2>
+            
+            
+            
+            <p>I diagrammi di flusso prevedono quattro simboli che indicano le quattro operazioni fondamentali di un algoritmo:</p>
+            
+            
+            
+            <p>–&nbsp;<strong>inizio</strong>&nbsp;o&nbsp;<strong>fine</strong>;</p>
+            
+            
+            
+            <p>–&nbsp;<strong>input</strong>&nbsp;o&nbsp;<strong>output</strong>;</p>
+            
+            
+            
+            <p>–&nbsp;<strong>assegnazione</strong>&nbsp;e/o&nbsp;<strong>calcolo</strong>&nbsp;di espressioni;</p>
+            
+            
+            
+            <p>– verifica di&nbsp;<strong>condizioni</strong>.</p>
+            
+            
+            
+            <p>Tutti i simboli sono connessi tra loro da frecce direzionali.</p>
+            
+            
+            
+            <figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="390" height="490" src="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-28.png" alt="" class="wp-image-452" srcset="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-28.png 390w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-28-239x300.png 239w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-28-230x289.png 230w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-28-350x440.png 350w" sizes="(max-width: 390px) 100vw, 390px"></figure>
+            
+            
+            
+            <p>Tutti i simboli hanno un solo connettore in ingresso ed uno solo in uscita, tranne la condizione che ha due connettori in uscita.&nbsp;</p>
+            
+            
+            
+            <p>Come vedremo, possiamo rappresentare con questi quattro simboli qualsiasi programma per computer<a href="applewebdata://CAC4C9B7-F2B6-415E-92E1-EADAB6B00367#_ftn1"><sup>[1]</sup></a>.</p>
+            
+            
+            
+            <h3 class="wp-block-heading" data-id="articleTOC_2"><strong>Esempio: calcolo della somma di due numeri.</strong></h3>
+            
+            
+            
+            <p>Questo programma richiede in input due numeri a e b e restituisce un risultato c pari ad a+b.</p>
+            
+            
+            
+            <figure class="wp-block-image size-large"><img decoding="async" width="748" height="1024" src="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-29-748x1024.png" alt="" class="wp-image-453" srcset="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-29-748x1024.png 748w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-29-219x300.png 219w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-29-768x1052.png 768w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-29-230x315.png 230w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-29-350x479.png 350w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-29-480x657.png 480w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-29.png 818w" sizes="(max-width: 748px) 100vw, 748px"></figure>
+            
+            
+            
+            <p>Come si vede l’utente interagisce con gli input output (parallelogramma), mentre la memoria del computer memorizza valori immessi in input (parallelogramma) oppure calcolati. Inoltre la memoria del computer contiene i valori inviati all’utente tramite output.&nbsp;</p>
+            
+            
+            
+            <p>Per memorizzare valori introduciamo il concetto di&nbsp;<strong>variabile</strong>: una variabile è una area di memoria, identificata con un nome (detto&nbsp;<strong>identificatore</strong>, ad esempio “a” o “b”) che contiene un&nbsp;<strong>valore</strong>. Questo valore può cambiare anche nel corso del programma, per questo si chiama appunto “variabile”.</p>
+            
+            
+            
+            <p>E’ l’utente che stabilisce il valore della variabile, quindi il programma deve funzionare senza conoscere il valore della variabile, per rispettare il principio di generalità.</p>
+            
+            
+            
+            <h3 class="wp-block-heading" data-id="articleTOC_3"><strong>Esempio: pari o dispari</strong></h3>
+            
+            
+            
+            <p>Questo programma richiede un numero a, e dice se è pari o dispari.</p>
+            
+            
+            
+            <figure class="wp-block-image size-full"><img decoding="async" width="544" height="944" src="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-30.png" alt="" class="wp-image-454" srcset="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-30.png 544w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-30-173x300.png 173w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-30-230x399.png 230w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-30-350x607.png 350w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-30-480x833.png 480w" sizes="(max-width: 544px) 100vw, 544px"></figure>
+            
+            
+            
+            <p>Come si vede, dopo l’input, il programma effettua una verifica: “a%2==0”. Il simbolo “%” indica il resto della divisione, mentre “==” indica un confronto di uguaglianza. Questa espressione è VERA se a % 2 è uguale a 0, altrimenti è FALSA. Ad esempio, con a=4 l’espressione è vera: a%2 è infatti uguale a 0. Invece con a=5, l’espressione è FALSA.</p>
+            
+            
+            
+            <p>Come si vede, vengono rispettate tutte le caratteristiche di un algoritmo:</p>
+            
+            
+            
+            <p>–&nbsp;<strong>correttezza</strong>: qualsiasi sia il numero inserito, il risultato è corretto;</p>
+            
+            
+            
+            <p>–&nbsp;<strong>generalità</strong>: l’algoritmo non dipende da un particolare input;</p>
+            
+            
+            
+            <p>–&nbsp;<strong>finitezza</strong>: l’algoritmo in qualsiasi caso termina in un numero finito di istruzioni;</p>
+            
+            
+            
+            <p>–&nbsp;<strong>efficienza</strong>: l’algoritmo non si perde in inutili calcoli.</p>
+            
+            
+            
+            <p>–&nbsp;<strong>non ambiguità</strong>: non ci sono contraddizioni;</p>
+            
+            
+            
+            <p><strong>– completezza</strong>: sono considerati tutti i casi possibili;</p>
+            
+            
+            
+            <p><strong>Esempio: conta fino a n</strong></p>
+            
+            
+            
+            <p>In questo programma chiediamo all’utente un numero n, ma stavolta stampiamo tutti i valori da 1 a n.</p>
+            
+            
+            
+            <p>Stavolta non basta calcolare una espressione, ma dobbiamo usare un contatore e soprattutto un ciclo.</p>
+            
+            
+            
+            <figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="380" height="902" src="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-31.png" alt="" class="wp-image-455" srcset="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-31.png 380w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-31-126x300.png 126w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-31-230x546.png 230w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-31-350x831.png 350w" sizes="auto, (max-width: 380px) 100vw, 380px"></figure>
+            
+            
+            
+            <p>Vediamo i passaggi:</p>
+            
+            
+            
+            <p>1) Viene richiesto n</p>
+            
+            
+            
+            <p>2) La variabile i viene inizializzata ad 1.</p>
+            
+            
+            
+            <p>3) La variabile i viene stampata.</p>
+            
+            
+            
+            <p>4) i viene incrementata di 1.</p>
+            
+            
+            
+            <p>5) Se i è ancora minore o uguale a n, si torna al punto 3, altrimenti si va al punto 6</p>
+            
+            
+            
+            <p>6) fine.</p>
+            
+            
+            
+            <p>Ad esempio per n= 5 avremo:</p>
+            
+            
+            
+            <p>i=1 -&gt; si torna al punto 3 perchè i&lt;=5</p>
+            
+            
+            
+            <p>i=2 -&gt; si torna al punto 3 perchè i&lt;=5</p>
+            
+            
+            
+            <p>i=3 -&gt; si torna al punto 3 perchè i&lt;=5</p>
+            
+            
+            
+            <p>i=4 -&gt; si torna al punto 3 perchè i&lt;=5</p>
+            
+            
+            
+            <p>i=5 -&gt; si torna al punto 3 perchè i&lt;=5</p>
+            
+            
+            
+            <p>i=6 -&gt; si va al punto 7, perchè i &gt; 5</p>
+            
+            
+            
+            <p>I punti 3-4-5 vengono effettuati molte volte: per la precisione n volte.&nbsp;</p>
+            
+            
+            
+            <p>Ogni ripetizione si chiama&nbsp;<strong>ciclo</strong>.</p>
+            
+            
+            
+            <p>Il numero di cicli è determinato da n.&nbsp;</p>
+            
+            
+            
+            <p>Con n=10 avremo 10 cicli, con n=1000 avremo 1000 cicli e così via. E’ possibile anche avere milioni di cicli, scegliendo n molto grande.</p>
+            
+            
+            
+            <p>Come possiamo vedere anche un algoritmo semplice, con solo 7 passaggi come in questo diagramma di flusso, può portare all’esecuzione, grazie ai cicli, di migliaia o milioni di cicli.</p>
+            
+            
+            
+            <p>Tuttavia l’algoritmo mantiene sempre le sue quattro caratteristiche:</p>
+            
+            
+            
+            <p>–&nbsp;<strong>correttezza</strong>: qualsiasi sia il numero inserito, il risultato è corretto;</p>
+            
+            
+            
+            <p>–&nbsp;<strong>generalità</strong>: l’algoritmo non dipende da un particolare input;</p>
+            
+            
+            
+            <p>–&nbsp;<strong>finitezza</strong>: l’algoritmo in qualsiasi caso termina in un numero finito di istruzioni;</p>
+            
+            
+            
+            <p>–&nbsp;<strong>efficienza</strong>: l’algoritmo non si perde in inutili calcoli.</p>
+            
+            
+            
+            <p>–&nbsp;<strong>non ambiguità</strong>: non ci sono contraddizioni;</p>
+            
+            
+            
+            <p><strong>– completezza</strong>: sono considerati tutti i casi possibili;</p>
+            
+            
+            
+            <hr class="wp-block-separator has-alpha-channel-opacity">
+            
+            
+            
+            <p><a href="applewebdata://CAC4C9B7-F2B6-415E-92E1-EADAB6B00367#_ftnref1"><sup>[1]</sup></a>&nbsp;Come vedremo questa affermazione è alla base del teorema fondamentale della programmazione, il teorema di Bohm-Jacopini.</p>
+            </div></div>         
+                       
+      </div>
+      <div id="pagina3" class="page">         
+        <div class="row"><a href="#pagina1">Home</a></div>
+                      
+         <div class="row"><div id="eckb-article-content-body"><p>La Struct permette di collegare tra loro informazioni in una unica struttura dati e memorizzarla in una variabile. </p>
+
+
+
+            <p>Ad esempio con una struct possiamo connettere i dati anagrafici di una persona (nome, cognome, età, eccPoniamo ad esempio di voler creare una struttura dati che associa uno studente a un nome, cognome e voto. Creiamo poi un programma che legge da tastiera i voti di un certo numero di studenti scelto dall’utente e salva il tutto su un file.</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-cpp" data-lang="C++"><code class=" language-cpp" data-hcb-clip="1"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+            
+            <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;string.h&gt;</span></span>
+            
+            <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;fstream&gt;</span></span>
+            
+            <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+            
+            <span class="token macro property">#<span class="token directive keyword">define</span> LEN 20</span>
+            
+            <span class="token keyword">typedef</span> <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+            
+                <span class="token keyword">char</span> nome<span class="token punctuation">[</span>LEN<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            
+                <span class="token keyword">char</span> cognome<span class="token punctuation">[</span>LEN<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            
+                 <span class="token keyword">int</span> voto<span class="token punctuation">;</span>
+            
+            <span class="token punctuation">}</span> Studente<span class="token punctuation">;</span>
+            
+            <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            
+            <span class="token punctuation">{</span>
+            
+                <span class="token keyword">int</span> numero_alunni<span class="token punctuation">;</span>
+            
+                cout<span class="token operator">&lt;&lt;</span><span class="token string">"Inserisci il numero di alunni: "</span><span class="token punctuation">;</span>
+            
+                cin <span class="token operator">&gt;&gt;</span> numero_alunni<span class="token punctuation">;</span>
+            
+                Studente studenti<span class="token punctuation">[</span>numero_alunni<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            
+                <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span>numero_alunni<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            
+                    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"alunno: "</span> <span class="token operator">&lt;&lt;</span> i<span class="token operator">+</span><span class="token number">1</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            
+                    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Nome: "</span><span class="token punctuation">;</span>
+            
+                    cin <span class="token operator">&gt;&gt;</span> studenti<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>nome<span class="token punctuation">;</span>
+            
+                    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Cognome: "</span><span class="token punctuation">;</span>
+            
+                    cin <span class="token operator">&gt;&gt;</span> studenti<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>cognome<span class="token punctuation">;</span>
+            
+                    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Voto: "</span><span class="token punctuation">;</span>
+            
+                    cin <span class="token operator">&gt;&gt;</span> studenti<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>voto<span class="token punctuation">;</span>
+            
+                <span class="token punctuation">}</span>
+            
+                ofstream <span class="token function">file</span><span class="token punctuation">(</span><span class="token string">"studenti.csv"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            
+                <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span>numero_alunni<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            
+                    file <span class="token operator">&lt;&lt;</span> studenti<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>nome <span class="token operator">&lt;&lt;</span> <span class="token string">","</span> <span class="token operator">&lt;&lt;</span> studenti<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>cognome <span class="token operator">&lt;&lt;</span> <span class="token string">","</span> <span class="token operator">&lt;&lt;</span> studenti<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>voto <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            
+                <span class="token punctuation">}</span>
+            
+                <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            
+            <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;1&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <p>Vediamo in dettaglio come funziona la struct:</p>
+            
+            
+            
+            <p>– prima di tutto si usa una dichiarazione&nbsp;<strong>typedef struct {… }</strong>&nbsp;per definire la struttura, dove ogni elemento è definito da nome e tipo e viene chiamato proprietà. Al termine del blocco si da un nome al tipo di dato (si suggerisce l’iniziale maiuscola);&nbsp;</p>
+            
+            
+            
+            <p>– l’operatore&nbsp;<strong>.</strong>&nbsp;permette di accedere alla singola proprietà di un oggetto di tipo struct.</p>
+            
+            
+            
+            <p>E’ anche possibile effettuare l’assegnazione rapida:</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-plain"><code class=" language-plain" data-hcb-clip="2">typedef struct {
+            
+              char nome[LEN];
+            
+              char cognome[LEN];
+            
+              int voto;
+            
+            } Studente;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;2&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <p><strong>Studente studente1 = {“Mario”, “Rossi”, 6};</strong></p>
+            
+            
+            
+            <p><strong>Strutture e funzioni</strong></p>
+            
+            
+            
+            <p>Le strutture sono tipi di dato memorizzati localmente (quindi nello stack). Cosa succede però se voglio modificare una struttura usando una funzione? Si può usare il solito operatore &amp; ma non basta.</p>
+            
+            
+            
+            <p>Vediamo un esempio completo.</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-plain"><code class=" language-plain" data-hcb-clip="3">#include &lt;iostream&gt;
+            
+            #include &lt;string.h&gt;
+            
+            #include &lt;fstream&gt;
+            
+            using namespace std;
+            
+            #define LEN 20
+            
+            typedef struct {
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;char nome[LEN];
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;char cognome[LEN];
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float italiano;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float storia;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float matematica;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float media;
+            
+            } Studente;
+            
+            void calcola_media(Studente *stud) {
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;stud-&gt;media = (stud-&gt;italiano + stud-&gt;storia + stud-&gt;matematica) / 3;
+            
+            }
+            
+            int main()
+            
+            {
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;int numero_alunni;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;"Inserisci il numero di alunni: ";
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;cin &gt;&gt; numero_alunni;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;Studente studenti[numero_alunni];
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;for (int i=0; i&lt;numero_alunni; i++) {
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; "alunno: " &lt;&lt; i+1 &lt;&lt; endl;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; "Nome: ";
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin &gt;&gt; studenti[i].nome;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; "Cognome: ";
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin &gt;&gt; studenti[i].cognome;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; "Italiano: ";
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin &gt;&gt; studenti[i].italiano;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; "Storia: ";
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin &gt;&gt; studenti[i].storia;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; "Matematica: ";
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin &gt;&gt; studenti[i].matematica;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calcola_media(&amp;studenti[i]);
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;}
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;ofstream file("studenti.csv");
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;for (int i=0; i&lt;numero_alunni; i++) {
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;file &lt;&lt; studenti[i].nome &lt;&lt; "," &lt;&lt; studenti[i].cognome &lt;&lt; "," &lt;&lt; studenti[i].media &lt;&lt; endl;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;}
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;return 0;
+            
+            }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;3&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <p>Come si può vedere si richiama la funzione usando l’operatore &amp;. La funzione quindi opera su un puntatore studente*. Per accedere alle proprietà si può quindi procedere in due modi:</p>
+            
+            
+            
+            <p>1) Risolvendo il puntatore: ad esempio con&nbsp;<strong>(*stud).nome</strong></p>
+            
+            
+            
+            <p>2) Usando l’operatore&nbsp;<strong>-&gt;</strong>: ad esempio con&nbsp;<strong>stud-&gt;nome</strong>, che è la forma usata con l’esempio.</p>
+            </div></div>
+      </div>
+      <div id="pagina4" class="page">
+        <div class="row"><a href="#pagina1">Home</a></div>
+        <div class="row"><div id="eckb-article-content-body"><h3 class="wp-block-heading" id="block-4bb1f75222774baaa89c79e76b197c9a" data-id="articleTOC_0"><strong>Cenni matematici</strong></h3>
+
+
+
+            <p>Da un punto di vista matematico la definizione più semplice di funzione è una relazione tra due insiemi A (detto dominio) e B (detto codominio), che associa ad ogni elemento di A un elemento di B.</p>
+            
+            
+            
+            <p>In termini formali si esprime nel seguente modo:</p>
+            
+            
+            
+            <p><strong>f:A-&gt;B </strong></p>
+            
+            
+            
+            <p>Dove per ogni<strong> x ∈ A</strong> si ha&nbsp;<em>f(x)&nbsp;=</em>&nbsp;B</p>
+            
+            
+            
+            <p>Esempi:</p>
+            
+            
+            
+            <ul id="block-2b55c651d649497e99d74fceb026da38" class="wp-block-list">
+            <li>F(x) = 2*x: dominio numeri interi e codominio numeri interi</li>
+            
+            
+            
+            <li>F(x) = x / 2: dominio numeri interi e codominio numeri razionali</li>
+            </ul>
+            
+            
+            
+            <p>Da questa definizione più semplice discende la definizione più&nbsp;<strong>generale</strong>: dato un gruppo arbitrario (e finito) di insiemi A, B, C… K una funzione è definita come una relazione tra questi ed un insieme Z, che associa un elemento di A, un elemento di B, un elemento di C, e via andare <strong>ad un elemento di Z</strong>. Si ha ovverof:X,Y,Z…K&nbsp;→&nbsp;Z<em>f</em>:<em>X</em>,<em>Y</em>,<em>Z</em>…<em>K</em>&nbsp;→&nbsp;<em>Z</em></p>
+            
+            
+            
+            <p>dove per a&nbsp;<strong>∈</strong>&nbsp;A, b&nbsp;<strong>∈</strong>&nbsp;B, c&nbsp;<strong>∈</strong>&nbsp;C … k&nbsp;<strong>∈</strong>&nbsp;K&nbsp;&nbsp;si ha&nbsp;quindi che <em>f(a, b, c, … k)&nbsp;=</em>&nbsp;Z</p>
+            
+            
+            
+            <p>a,b,c,…k sono una&nbsp;<strong>tupla di parametri (detti anche argomenti)</strong>, e f(a,b,c,…k) è il&nbsp;<strong>risultato della funzione, cioè il suo valore di ritorno.</strong></p>
+            
+            
+            
+            <h3 class="wp-block-heading" id="block-7e8509481d4e4434a6e2ad2f7bdd6eb6" data-id="articleTOC_1"><strong>Le funzioni in informatica</strong></h3>
+            
+            
+            
+            <p>La definizione matematica di funzione viene utilizzata in informatica per definire dei sottoprogrammi del programma principale. Questi sottoprogrammi svolgono quindi funzioni del programma e sono riutilizzabili in punti diversi del programma principale. L’importanza delle funzioni è quindi quella di rendere possibile la modularizzazione dei programmi informatici: è possibile suddividere un programma in sottoprogrammi, e riutilizzare gli stessi sottoprogrammi in programmi differenti.</p>
+            
+            
+            
+            <p>Questo rende possibile quindi:</p>
+            
+            
+            
+            <ul id="block-86ba902baa624eb8ba39e24828bc1da4" class="wp-block-list">
+            <li>Scrivere&nbsp;<strong>meno codice, evitando ripetizioni;</strong></li>
+            
+            
+            
+            <li><strong>Riusare codice</strong>&nbsp;già sviluppato;</li>
+            
+            
+            
+            <li>Riusare codice di&nbsp;<strong>terze parti</strong>;</li>
+            
+            
+            
+            <li>Sviluppare progetti complessi mediante la strategia del “<strong>divide et impera</strong>” che consiste nel suddividere un grosso problema in sottoproblemi, da risolvere separatamente;</li>
+            
+            
+            
+            <li><strong>Suddividere</strong>&nbsp;il lavoro di un singolo progetto tra più programmatori.</li>
+            </ul>
+            
+            
+            
+            <p>Le funzioni sono quindi alla base della cosiddetta programmazione&nbsp;<strong>modulare</strong>, ovvero una metodologia di programmazione che consiste nel realizzare programmi composti da moduli, ognuno dei quali specializzato in specifiche attività.</p>
+            
+            
+            
+            <h3 class="wp-block-heading" id="block-68177be0a1534634b39f06a23936707c" data-id="articleTOC_2"><strong>Struttura di una funzione</strong></h3>
+            
+            
+            
+            <p>In linguaggio C/C++ (e in modo simile nella maggior parte dei linguaggi di programmazione) una funzione può essere dichiarata nel seguente modo:</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-cpp" data-lang="C++"><code class=" language-cpp" data-hcb-clip="1">returnType functionName <span class="token punctuation">(</span><span class="token punctuation">[</span>parameter1Type parameter1<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">,</span> parameter2Type parameter2<span class="token punctuation">]</span>…<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+               … <span class="token punctuation">(</span>code block<span class="token punctuation">)</span>
+              <span class="token punctuation">[</span> <span class="token keyword">return</span> expression<span class="token punctuation">;</span> <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;1&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <p>Le parentersi quadre mostrano quali elementi sono facoltativi.</p>
+            
+            
+            
+            <p>Vediamo singolarmente i singoli elementi:</p>
+            
+            
+            
+            <p><code><strong>returnType</strong></code>: tipo di ritorno, esso può essere qualsiasi tipo valido C++</p>
+            
+            
+            
+            <p><code><strong>functionName</strong></code>: nome della funzione</p>
+            
+            
+            
+            <p><code><strong>parameterType</strong></code>: tipo di dato passato come parametro</p>
+            
+            
+            
+            <p><code><strong>parameter</strong></code>: tipo di dato passato come parametro</p>
+            
+            
+            
+            <p><code><strong>return expression</strong></code>: istruzione che restituisce una espressione che deve essere del tipo di ritorno</p>
+            
+            
+            
+            <p>Come si vede sopra, tutti i parametri sono facoltativi. L’argomento dei parametri sarà approfondito nella sezione relativa ai parametri.</p>
+            
+            
+            
+            <p>La prima riga di intestazione della funzione (che contiene il tipo di ritorno, il nome, ed i parametri) viene chiamata&nbsp;<strong>firma</strong>.</p>
+            
+            
+            
+            <p>Vediamo un esempio:</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-cpp" data-lang="C++"><code class=" language-cpp" data-hcb-clip="2"><span class="token keyword">int</span> <span class="token function">somma</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">return</span> x<span class="token operator">+</span>y<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;2&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <p>Questa funzione prende due parametri x ed y di tipo intero e restituisce la loro somma.</p>
+            
+            
+            
+            <p>All’interno di un blocco di funzione è possibile scrivere codice, compresa la creazione di variabile e l’utilizzo di costrutti.</p>
+            
+            
+            
+            <p>Se in una funzione matematica (come sopra descritte) si trasforma un insieme di parametri in un risultato, le funzioni in ambito informatico estendono questo concetto. Esse infatti possono ricevere zero, uno o più parametri.</p>
+            
+            
+            
+            <p>Possono anche non restituire alcun valore: in questo caso bisogna impostare come tipo di ritorno la parola chiave “void”. Esse inoltre non prevedono una istruzione return.</p>
+            
+            
+            
+            <p>Esempio:</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-cpp" data-lang="C++"><code class=" language-cpp" data-hcb-clip="3"><span class="token keyword">void</span> <span class="token function">printResult</span><span class="token punctuation">(</span><span class="token keyword">char</span> character<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              cout <span class="token operator">&lt;&lt;</span> character<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;3&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <h3 class="wp-block-heading" id="block-a8c8b41d88954904bc522cc1d0ced87c" data-id="articleTOC_3"><strong>Chiamata di funzione e sua esecuzione</strong></h3>
+            
+            
+            
+            <p>Una funzione viene eseguita quando viene invocata dal main() oppure da altra funzione. La funzione da cui si chiama si chiama&nbsp;<strong>chiamante</strong>, la funzione chiamata si chiama&nbsp;<strong>funzione chiamata</strong>.</p>
+            
+            
+            
+            <p>Esempio:</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-cpp" data-lang="C++"><code class=" language-cpp" data-hcb-clip="4"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+            <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+            
+            <span class="token keyword">int</span> <span class="token function">somma</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">int</span> sum <span class="token operator">=</span> x<span class="token operator">+</span>y<span class="token punctuation">;</span>
+              <span class="token keyword">return</span> sum<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            
+            <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">int</span> a<span class="token punctuation">;</span>
+              cout <span class="token operator">&lt;&lt;</span> “Inserisci il primo addendo<span class="token operator">:</span> “<span class="token punctuation">;</span>
+              cin <span class="token operator">&gt;&gt;</span> a<span class="token punctuation">;</span>
+              <span class="token keyword">int</span> b<span class="token punctuation">;</span>
+              cout <span class="token operator">&lt;&lt;</span> “Inserisci il secondo addendo<span class="token operator">:</span> ”<span class="token punctuation">;</span>
+              cin <span class="token operator">&gt;&gt;</span> b<span class="token punctuation">;</span>
+              cout <span class="token operator">&lt;&lt;</span> “La somma è<span class="token operator">:</span> “<span class="token punctuation">;</span>
+              cout <span class="token operator">&lt;&lt;</span> <span class="token function">somma</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;4&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <p>Nell’esecuzione di questo codice, la funzione chiamante cede il controllo alla funzione somma, che utilizza i valori ricevuti per eseguire la sua elaborazione (una somma) e restituisce il valore che viene poi elaborato nel main (viene stampato a schermo).</p>
+            
+            
+            
+            <p>I parametri con cui è definita la funzione</p>
+            
+            
+            
+            <pre class="wp-block-code"><code>int somma(int x, int y)</code></pre>
+            
+            
+            
+            <p>sono chiamati parametri formali.</p>
+            
+            
+            
+            <p>Quando viene chiamata dall’istruzione:</p>
+            
+            
+            
+            <pre class="wp-block-code"><code>somma(a, b)</code></pre>
+            
+            
+            
+            <p>questi parametri formali assumono poi il valore effettivo di a e b.</p>
+            
+            
+            
+            <h2 class="wp-block-heading" data-id="articleTOC_4">Schema della memoria</h2>
+            
+            
+            
+            <p>Abbiamo già visto (<a href="https://cipiaceinfo.it/docs/tecnologie/sistemi-operativi/sistemi-operativi-concorrenti/" data-type="epkb_post_type_1" data-id="191">in questa lezione</a>) che il processo in esecuzione ha una memoria dedicata composta da uno spazio per il codice, uno per lo heap ed uno per lo stack:</p>
+            
+            
+            
+            <figure class="wp-block-image" id="block-297a0096736d483ea38d649ff4bd831c"><img decoding="async" src="https://imagedelivery.net/IEMzXmjRvW0g933AN5ejrA/wwwnotionso-image-prod-files-secures3us-west-2amazonawscom-54c12d55-229f-4c83-b4b6-dd7d262e4443-87273618-6ad7-4ae6-bd87-a6121bde4955-untitledpng/public" alt="notion image"></figure>
+            
+            
+            
+            <p><a href="https://cipiaceinfo.it/docs/tecnologie/architetture-elaboratori/stack/" data-type="epkb_post_type_1" data-id="122">L’argomento è approfondito qui.</a></p>
+            
+            
+            
+            <p>L’utilizzo dello stack garantisce che l’esecuzione di una funzione abbia uno spazio di memoria&nbsp;<strong>dedicato. </strong>Quando la funzione viene eseguita il processore inserisce nello stack (che ha una struttura dati a pila) i parametri della funzione stessa, ed il punto del programma a cui tornare a funzione conclusa. Inoltre la funzione memorizza nello stack tutte le variabili locali che definisce. Al termine dell’esecuzione il processore rimuove dallo stack tutti questi elementi e lo riporta allo stato che aveva prima dell’esecuzione. Inoltre restituisce il valore di ritorno (quando presente) all’istruzione chiamante. Nell’esempio sopra, quindi, la funzione somma svolge le sue operazioni, e poi quando termina tutti i suoi dati vengono rimossi dallo stack. Questo meccanismo garantisce che lo spazio “locale” usato dalla funzione esista&nbsp;<strong>solo durante l’esecuzione</strong>&nbsp;della funzione, e che venga poi eliminato una volta che la funzione termina la sua esecuzione. La funzione è quindi una specie di bolla che viene creata e distrutta.</p>
+            
+            
+            
+            <p>E’ importante quindi capire che i parametri passati alla funzione vengono copiati nello stack. Ed essendo delle copie, possono essere modificati senza che il valore degli originali sia modificato.</p>
+            
+            
+            
+            <p>Se poi una funzione chiama un’altra funzione, viene creata una nuova area nello stack che si aggiunge alla precedente area dello stack, questo perché lo stack è una pila. Quindi anche la seconda funzione memorizzerà una copia dei parametri, più le proprie variabili locali, fino al termine della sua esecuzione (poi saranno cancellati).</p>
+            
+            
+            
+            <p>Il codice che viene eseguito nella funzione vede solo i dati relativi alla funzione attualmente in esecuzione e non la funzione chiamante, e che una volta che viene conclusa l’esecuzione, torna visibile l’area sottostante.</p>
+            
+            
+            
+            <h3 class="wp-block-heading" id="block-77fceb5f2f4f42858336903d5bb8c8f1" data-id="articleTOC_5"><strong>Passaggio di parametri alle funzioni</strong></h3>
+            
+            
+            
+            <h4 class="wp-block-heading" id="block-bb8f120b6741404e9591df1144d2b3bc" data-id="articleTOC_6"><strong>Per valore</strong></h4>
+            
+            
+            
+            <p>Il passaggio di parametri che abbiamo appena visto viene definito per “valore”: i parametri della funzione vengono copiate nello stack, e la funzione lavora solo con questa copia.</p>
+            
+            
+            
+            <p>Nella chiamata per valore il chiamante può passare alla funzione parametri sia sotto forma di un simbolo (variabile o costante) che sotto forma di espressione. E’ quindi possibile eseguire:</p>
+            
+            
+            
+            <p><code>somma(3, 4);</code></p>
+            
+            
+            
+            <p><code>somma(a, b);</code></p>
+            
+            
+            
+            <p><code>somma(a, 3);</code></p>
+            
+            
+            
+            <p><code>somma(0, a);</code></p>
+            
+            
+            
+            <p>La funzione chiamata copia i valori ricevuti nelle variabili definite negli argomenti, e può modificare il valore queste variabili. <strong>Siccome è un copia questa modifica non ha effetto sull variabile originaria.</strong></p>
+            
+            
+            
+            <h4 class="wp-block-heading" id="block-8c70df4f01a146ec83b22dfe0d05bd55" data-id="articleTOC_7"><strong>Per riferimento</strong></h4>
+            
+            
+            
+            <p>In molte situazioni può essere invece utile poter modificare i valori originali: le funzioni possono ritornare un solo valore ma quando ne vogliamo modificare più di uno, diventa molto scomodo.</p>
+            
+            
+            
+            <p>Tuttavia se come parametro passiamo un puntatore ad una variabile, quindi il suo indirizzo di memoria, quello che viene effettivamente copiato è l’indirizzo, non il valore. Nella funzione possiamo quindi modificare il valore “puntato”, che andrà a modificare il valore della variabile originale. Questo perchè non abbiamo copiato la variabile ma solo il suo indirizzo di memoria.</p>
+            
+            
+            
+            <p>Questo tipo di chiamata viene detta&nbsp;<strong>per riferimento</strong>.</p>
+            
+            
+            
+            <p>In questo esempio vedremo una funzione senza valore di ritorno, che va a memorizzare direttamente il risultato con un puntatore di memoria.</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-cpp" data-lang="C++"><code class=" language-cpp" data-hcb-clip="5"><span class="token keyword">void</span> <span class="token function">sommaConPuntatore</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token operator">*</span> sum<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+               <span class="token operator">*</span>sum <span class="token operator">=</span> x <span class="token operator">+</span> y<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            
+            <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">int</span> somma<span class="token punctuation">;</span>
+              <span class="token function">sommaConPuntatore</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>somma<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+              cout <span class="token operator">&lt;&lt;</span> somma<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;5&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <p>Come si può notare, la firma della funzione prevede che il primo parametro sia un puntatore ad intero (cioè l’indirizzo di memoria che contiene una variabile intera). Quando viene eseguita la funzione verrà quindi passato il riferimento alla variabile somma (cioè appunto il suo indirizzo di memoria).</p>
+            
+            
+            
+            <p>Quando viene eseguita la funzione, quindi, questa accederà al valore originale della variabile somma, e questo rimarrà anche una volta che la funzione terminerà.</p>
+            
+            
+            
+            <p>Vediamo un altro esempio, molto più significativo. Poniamo di voler scambiare il valore di due variabili, e creiamo una funzione che svolge per noi questa cosa.</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-cpp" data-lang="C++"><code class=" language-cpp" data-hcb-clip="6"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+            <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+            
+            <span class="token keyword">void</span> <span class="token function">swap</span><span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token operator">*</span>x<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">*</span>y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">int</span> temp <span class="token operator">=</span> <span class="token operator">*</span>x<span class="token punctuation">;</span>
+              <span class="token operator">*</span>x <span class="token operator">=</span> <span class="token operator">*</span>y<span class="token punctuation">;</span>
+              <span class="token operator">*</span>y <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            
+            <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">int</span> a<span class="token punctuation">;</span>
+              cout <span class="token operator">&lt;&lt;</span> “Inserisci il primo numero<span class="token operator">:</span> “<span class="token punctuation">;</span>
+              cin <span class="token operator">&gt;&gt;</span> a<span class="token punctuation">;</span>
+              <span class="token keyword">int</span> b<span class="token punctuation">;</span>
+              cout <span class="token operator">&lt;&lt;</span> “Inserisci il secondo numero<span class="token operator">:</span> ”<span class="token punctuation">;</span>
+              cin <span class="token operator">&gt;&gt;</span> b<span class="token punctuation">;</span>
+              <span class="token function">swap</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>a<span class="token punctuation">,</span> <span class="token operator">&amp;</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+              cout <span class="token operator">&lt;&lt;</span> “Adesso il primo è<span class="token operator">:</span> “ <span class="token operator">&lt;&lt;</span> b <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+              cout <span class="token operator">&lt;&lt;</span> “Adesso il secondo è<span class="token operator">:</span> “ <span class="token operator">&lt;&lt;</span> a <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+              <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;6&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <p>E’ importante osservare di nuovo che:</p>
+            
+            
+            
+            <ul id="block-639ada1a0cf84dd588e0b45f5e93d1d3" class="wp-block-list">
+            <li>Nella firma della funzione swap, si usano degli argomenti puntatore (contraddistinti dal carattere *). Il puntatore&nbsp;&nbsp;è il valore dell’indirizzo di memoria dove risiede la variabile.</li>
+            
+            
+            
+            <li>Per accedere alla variabile puntata bisogna quindi referenziarla usando come prefisso il carattere *.</li>
+            </ul>
+            
+            
+            
+            <p>L’utilizzo di parametri con riferimento permette di aggirare l’ostacolo avere una funzione che restituisce un unico valore, in quanto è possibile modificare uno o più parametri della funzione.</p>
+            
+            
+            
+            <h3 class="wp-block-heading" id="block-d9c3b1ea619544a28c6c4cfa5957b5a0" data-id="articleTOC_8"><strong>Array</strong></h3>
+            
+            
+            
+            <p>Le funzioni che prevedono degli array come parametri usano sempre la modalità per riferimento. Questo perché gli array non sono un tipo base, ma si riferiscono ad un’area di memoria che può contenere molti valori. E’ possibile chiamare una funzione con array con 3 modalità alternative ma equivalenti:</p>
+            
+            
+            
+            <ul id="block-c03c9665ace4439297abcef814aa2067" class="wp-block-list">
+            <li><code>void myFunction(int *vector, …)</code></li>
+            </ul>
+            
+            
+            
+            <p>In questa modalità – la più generica – viene dato un generico puntatore a variabile. Sta al programmatore capire che non è un puntatore ad un singolo valore ma ad un intero array, e quale la dimensione dell’array.</p>
+            
+            
+            
+            <p><em>Questo è dovuto al fatto che una variabile di tipo array è, di fatto, sempre un puntatore al primo elemento dell’array stesso.</em></p>
+            
+            
+            
+            <p>E’ quindi fortemente raccomandato passare almeno un secondo parametro con la dimensione dell’array. Questo perché la funzione non ha modo di sapere la dimensione dell’array stesso.</p>
+            
+            
+            
+            <ul id="block-2f7b36e6f9374467ac0f0a789055ca45" class="wp-block-list">
+            <li><code>void myFunction(int vector[], …)</code></li>
+            </ul>
+            
+            
+            
+            <p>In questa modalità viene indicato che il parametro è un array, ma è solo un formalismo, la funzione ignora la dimensione dell’array.</p>
+            
+            
+            
+            <ul id="block-ab88e45de0b040bfac4e5597f3a2f163" class="wp-block-list">
+            <li><code>void myFunction(int vector[10], …)</code></li>
+            </ul>
+            
+            
+            
+            <p>In questa modalità viene indicato sia che il parametro è un array, sia viene data la dimensione. Questo significa che chi scrive la funzione si aspetta un array di quella dimensione: in questo caso è più difficile sbagliare, ma ovviamente funziona quando si sa già che gli array hanno una dimensione fissa.</p>
+            
+            
+            
+            <p><em>Si ricorda che in C++ non esiste nessun meccanismo che impedisca di superare i limiti di un array. E’ compito del programmatore evitare questo tipo di errori.</em></p>
+            
+            
+            
+            <p>Non è invece possibile, almeno con le strutture finora viste, creare una funzione che restituisca un array. Infatti quando si crea un array dentro ad una funzione, questo viene distrutto dallo stack quando si esce dalla funzione. Questo limite verrà superato con l’uso del modificatore&nbsp;<em>static</em>, che si vedrà successivamente.</p>
+            
+            
+            
+            <h3 class="wp-block-heading" id="block-ebf9519dae364c81a9929c728205095e" data-id="articleTOC_9"><strong>Funzioni deterministiche e non deterministiche</strong></h3>
+            
+            
+            
+            <p>L’esempio appena visto è un esempio di come il concetto di funzione in C++ è più generale rispetto a quello definito nelle funzioni matematiche.</p>
+            
+            
+            
+            <p>Infatti, se una funzione matematica è una relazione che lega una determinata tupla di parametri ad un risultato, le funzioni in ambito informatico – ed in particolare in C++ – estendono questo concetto. Esse infatti possono:</p>
+            
+            
+            
+            <ul id="block-83ecec615bbe4edda8817385f86ed4d3" class="wp-block-list">
+            <li>Ricevere zero, uno o più parametri;</li>
+            
+            
+            
+            <li>Restituire un risultato o anche nessun risultato;</li>
+            
+            
+            
+            <li>Ricevere uno o più parametri e modificarli all’interno della funzione.</li>
+            </ul>
+            
+            
+            
+            <p>Le funzioni che legano una determinata tupla di parametri ad un risultato sono definite come come deterministiche, in quanto a partire da una determinata tupla di parametri forniscono sempre lo stesso risultato.</p>
+            
+            
+            
+            <p>Se non soddisfano questo requisito sono definite&nbsp;<strong>non deterministiche</strong>.</p>
+            
+            
+            
+            <p>Esempi di funzioni non deterministiche:</p>
+            
+            
+            
+            <ul id="block-09059f9bf73f4cee8006f44802a179e9" class="wp-block-list">
+            <li>una funzione che non riceve parametri e da un risultato;</li>
+            
+            
+            
+            <li>una funzione che anche con gli stessi parametri restituisce risultati differenti in chiamate differenti;</li>
+            
+            
+            
+            <li>una funzione che non restituisce nulla.</li>
+            </ul>
+            
+            
+            
+            <h3 class="wp-block-heading" id="block-59ee885e08f14d62976f4d4a4e8bc110" data-id="articleTOC_10"><strong>Funzione main()</strong></h3>
+            
+            
+            
+            <p>La funzione main è una funzione speciale, in quanto è il punto di ingresso dell’applicazione.</p>
+            
+            
+            
+            <p>Essa riceve come parametro gli argomenti di avvio dell’applicazione (che corrispondono agli argomenti passati all’applicazione via linea di comando) e restituisce un numero intero, che corrisponde ad un codice, che può essere 0 se l’applicazione termina correttamente, altrimenti un codice diverso da 0 per indicare l’errore.</p>
+            
+            
+            
+            <p>Il programma compilato quando viene lanciato dal sistema operativo esegue la funzione main, che (eventualmente) a sua volta esegue delle funzioni, che a loro volta possono eseguire altre funzioni.</p>
+            
+            
+            
+            <h3 class="wp-block-heading" id="block-d9bb3244349a44c99ca5db19f27f0e6b" data-id="articleTOC_11">Argomenti di default</h3>
+            
+            
+            
+            <p>E’ possibile definire degli argomenti di “default” nella definizione di una funzione.</p>
+            
+            
+            
+            <p>Ad esempio si prenda in considerazione la seguente funzione:</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-cpp" data-lang="C++"><code class=" language-cpp" data-hcb-clip="7"><span class="token keyword">void</span> <span class="token function">printChar</span><span class="token punctuation">(</span><span class="token keyword">int</span> count<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">=</span> “<span class="token operator">*</span>”<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+               <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;=</span>count<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+               cout <span class="token operator">&lt;&lt;</span> <span class="token keyword">char</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;7&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <p>Come si vede il secondo argomento è valorizzato.</p>
+            
+            
+            
+            <p>La funzione si può chiamare in due modi:</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-cpp" data-lang="C++"><code class=" language-cpp" data-hcb-clip="8"><span class="token function">printChar</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> “#”<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">-&gt;</span> stampa <span class="token number">5</span> volte il carattere #<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;8&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-cpp" data-lang="C++"><code class=" language-cpp" data-hcb-clip="9"><span class="token function">printChar</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">-&gt;</span> stampa <span class="token number">5</span> volte il carattere di <span class="token keyword">default</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;9&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            </div></div>               
+     </div>
+   </div>
+   <script type="module" src="./main.js"></script>
+
+</body>
+
+</html>

@@ -24,15 +24,3 @@ const hide = (elements) => {
     window.addEventListener('popstate', render); 
     render();   
  }
-
- const pages = Array.from(parentElement.querySelectorAll(".page"));
- 
- const url = new URL(document.location.href);
-const pageName = url.hash.replace("#", "");
-
-const selected = pages.filter((page) => page.id === pageName)[0] || pages[0];
-
-hide(pages);
-show(selected);
-
-window.addEventListener('popstate', render);
